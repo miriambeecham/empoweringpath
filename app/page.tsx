@@ -173,7 +173,7 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-fit">
               <div className="absolute -top-4 -left-4 w-full h-full bg-brand-light rounded-2xl opacity-30"></div>
               <Image
                 src="/images/relationship-coach-nashville-consultation.jpg"
@@ -225,7 +225,7 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
+            <div className="relative w-fit">
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-muted rounded-2xl"></div>
               <Image
                 src="/images/blakely-patterson-life-coach-office.jpg"
@@ -473,7 +473,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-fit">
               <div className="absolute -bottom-4 -left-4 w-full h-full bg-brand-light rounded-2xl opacity-30"></div>
               <Image
                 src="/images/professional-coaching-conversation.jpg"
@@ -654,7 +654,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative order-2 lg:order-1">
+            <div className="relative w-fit order-2 lg:order-1">
               <div className="absolute -top-4 -right-4 w-full h-full bg-muted rounded-2xl opacity-40"></div>
               <Image
                 src="/images/self-reflection-clarity-coaching.jpg"
