@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+
+    /* Custom Color Palette Variables */
+    /* Primary Brand Colors */
+   --forest-primary: #768578;
+   --forest-light: #849186;
+   --forest-lighter: #ADB6AE;
+
+
+   /* Secondary Supporting Colors */
+   --sage-primary: #748794;
+   --sage-light: #82939f;
+   --sage-lighter: #909fa9;
+
+
+   /* Accent Colors */
+   --rose-primary: #d9adb0;
+   --rose-light: #c68589;
+   --rose-lighter: #cd9296;
+
+
+   /* Neutral Backgrounds */
+   --taupe-primary: #e2cec8;
+   --taupe-light: #e5d3ce;
+   --taupe-lighter: #e8d8d3;
+
+
+   --coffee-primary: #f4eef1;
+   --coffee-light: #f5f0f2;
+   --coffee-lighter: #f6f1f4;
+
+
+   /* Text Colors */
+   --charcoal-primary: #373737;
+   --charcoal-light: #4b4b4b;
+   --charcoal-lighter: #5f5f5f;
+
+
+   /* Background Variations */
+   --bg-primary: #ffffff;
+   --bg-secondary: var(--coffee-lighter);
+   --bg-accent: var(--taupe-lighter);
+   --bg-muted: var(--forest-lighter);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for our color palette */
+@layer utilities {
+  .text-brand-primary {
+    color: var(--forest-primary);
+  }
+  .text-brand-secondary {
+    color: var(--sage-primary);
+  }
+  .text-accent {
+    color: var(--rose-primary);
+  }
+  .text-charcoal {
+    color: var(--charcoal-primary);
+  }
+  .text-charcoal-light {
+    color: var(--charcoal-light);
+  }
+  .text-charcoal-lighter {
+    color: var(--charcoal-lighter);
+  }
+
+  .bg-brand-primary {
+    background-color: var(--forest-primary);
+  }
+  .bg-brand-light {
+    background-color: var(--forest-light);
+  }
+  .bg-brand-lighter {
+    background-color: var(--forest-lighter);
+  }
+
+  .bg-accent {
+    background-color: var(--rose-primary);
+  }
+  .bg-accent-light {
+    background-color: var(--coffee-lighter);
+  }
+  .bg-accent-lighter {
+    background-color: var(--coffee-lighter);
+  }
+
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  .bg-muted {
+    background-color: var(--bg-muted);
+  }
+  .bg-neutral {
+    background-color: var(--bg-accent);
+  }
+
+  .border-brand {
+    border-color: var(--forest-primary);
+  }
+  .border-accent {
+    border-color: var(--rose-primary);
+  }
+
+  /* Hover states */
+  .hover-accent:hover {
+    background-color: var(--rose-light);
+  }
+  .hover-brand:hover {
+    background-color: var(--forest-light);
+  }
+}
